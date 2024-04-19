@@ -67,11 +67,11 @@ public class SpellChecker {
 		}
 
 		if (min > threshold) {
-			return "“" + word+ "” since the most similar word from the dictionary is at a distance greater than " + threshold;
+			return word;
 		}
 
 		else {
-			return "“" + resembles + "” since levenshtein(“" + word + "”, “" + resembles + "”) == " + min;
+			return resembles;
 		}
 	}
 
